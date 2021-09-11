@@ -1,0 +1,40 @@
+
+<table class="table mt-5">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Clase</th>
+        <th scope="col">Modelo</th>
+        <th scope="col">Material</th>
+        <th scope="col">Color</th>
+        <th scope="col">Altura(mm)</th>
+        <th scope="col">DiametroSuperior(mm)</th>
+        <th scope="col">DiametroInferior(mm)</th>
+        <th scope="col">Capacidad(ml)</th>
+        
+
+      </tr>
+    </thead>
+    <tbody>
+       
+      <tr *ngFor="let dato of reg">
+       
+        
+        <td>{{dato.id}}</td>
+        <td>{{dato.cantidad}}</td>
+        <td>{{dato.clase}}</td>
+        <td>{{dato.modelo}}</td>
+        <td>{{dato.material}}</td>
+        <td>{{dato.color}}</td>
+        <td>{{dato.altura_mm}}</td>
+        <td>{{dato.diasuperior_mm}}</td>
+        <td>{{dato.diainferior_mm}}</td>
+        <td>{{dato.capacidad_ml }}</td>
+      
+      </tr>
+
+     
+
+    </tbody>
+  </table>

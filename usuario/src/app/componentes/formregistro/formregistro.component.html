@@ -1,0 +1,75 @@
+
+<div class="mx-auto my-5" style="width: 1000px; ">
+    <div class="card">
+        <div class="card-body" style="background-color: rgba(0, 0, 0, 0.034);">
+        
+          <h1 class="fs-2 mb-5 text-center">Ingresar Producto</h1>
+        
+          <form class="row g-5">
+
+                <div class="form-group col-md-6">
+                  <label>No. de Piezas</label>
+                  <br>
+                    <input type="number" name="cantidad"  [(ngModel)]="registro.cantidad"  class="from-control">
+                  </div>
+
+                <div class="form-group col-md-6">
+                  <label>Clase: </label>
+                  <br>
+                  <select class="form-select" name="clase" [(ngModel)]="registro.clase"  class="from-control" autofocus>
+                    <option >Baja Calidad</option>
+                    <option >Alta calidad</option>
+                  </select>
+                  
+                </div>
+              
+                  <h2 class="fs-4">Propiedades</h2>
+                
+                <div class="form-group col-md-4">
+                  <label>Modelo:</label>
+                  <br>
+                    <input type="text" name="modelo" [(ngModel)]="registro.modelo"  class="from-control">
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label>Material:</label>
+                    <br>
+                    <input type="text" name="material" [(ngModel)]="registro.material"  class="from-control">
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label>Color:</label>
+                    <br>
+                    <input type="text" name="color"  [(ngModel)]="registro.color"   class="from-control">
+                  </div>
+                  <h2 class="fs-4"></h2>
+
+                  <div class="form-group col-md-3">
+                    <label>Altura:</label>
+                    <input type="number" name="altura_mm" [(ngModel)]="registro.altura_mm"  class="from-control">
+                  </div>
+
+                  <div class="form-group col-md-3">
+                    <label>Diametrosuperior(mm):</label>
+                    <input type="number" name="diasuperior_mm"  [(ngModel)]="registro.diasuperior_mm"  class="from-control">
+                  </div>
+
+                  
+                  <div class="form-group col-md-3">
+                    <label>Diametroinferior(mm):</label>
+                    <input type="number" name="diainferior_mm" [(ngModel)]="registro.diainferior_mm"  class="from-control">
+                  </div>
+
+
+                  <div class="form-group col-md-3">
+                    <label>Capacidad(ml):</label>
+                    <input type="number" name="capacidad_ml" [(ngModel)]="registro.capacidad_ml"  class="from-control">
+                  </div>
+               
+                  <button type="submit" class="btn btn-success mx-auto" style="width: 100px;" (click)="guardarRe()">Guardar</button>
+                
+            </form>
+            
+        </div>
+    </div>
+</div>
